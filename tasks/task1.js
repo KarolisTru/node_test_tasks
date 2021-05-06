@@ -4,6 +4,8 @@ function range1(x, y){
 
  if(!Number.isInteger(x) || !Number.isInteger(y)){
    return undefined;
+ } else if (x === y) {
+   return [x];
  }
 
  let newArr = [];
@@ -25,6 +27,8 @@ function range2(x, y){
 
   if(!Number.isInteger(x) || !Number.isInteger(y)){
     return undefined;
+  } else if (x === y) {
+    return [x];
   }
   const isIncreasing = x < y;
   const length = isIncreasing ? y - x : x - y;

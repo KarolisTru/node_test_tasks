@@ -41,4 +41,14 @@ function performTestsFor(func) {
     // Assertion
     expect(result).toEqual(expected);
   });
+  test(`should ${func.name}(x=5, y=5) to be [5]`, () => {
+    // Setup
+
+    // Execution
+    const result = func(5, 5);
+    const expected = [5];
+
+    // Assertion
+    expect(result).toEqual(expected);
+  })
 }
